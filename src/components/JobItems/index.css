@@ -1,0 +1,52 @@
+.job_item {
+  background-color: #475569;
+  border-radius: 20px;
+  padding: 20px;
+
+  margin-bottom: 30px;
+}
+.link {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+.company_logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+.pl {
+  font-size: 18px;
+}
+.def {
+  font-size: 15px;
+}
+.company_name {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.O {
+  display: flex;
+  justify-content: space-betweeen;
+}
+
+.op {
+  display: flex;
+  width: 10vw;
+  justify-content: space-between;
+}
+.top {
+  display: flex;
+}
+.kpl {
+  display: flex;
+}
+.logocon {
+  display: flex;
+  align-items: center;
+}
+.start {
+  margin-right: 3px;
+}

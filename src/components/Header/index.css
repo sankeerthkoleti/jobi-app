@@ -1,0 +1,32 @@
+.nav-header {
+  background-color: #202020;
+}
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px;
+}
+.websitelogo {
+  height: 4vh;
+  width: 8vw;
+}
+.logout-btn {
+  background-color: #4f46e5;
+  width: 10vw;
+  color: white;
+  border-radius: 10px;
+  height: 5vh;
+  border: none;
+}
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 10vw;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+}

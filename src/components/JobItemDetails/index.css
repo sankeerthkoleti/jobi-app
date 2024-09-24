@@ -1,0 +1,41 @@
+.jk {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sul {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+}
+
+.skillLogo {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+.li {
+  display: flex;
+  margin: 20px;
+}
+.skillcon {
+  display: flex;
+  align-items: center;
+}
+.life {
+  display: flex;
+}
+.similar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+.item {
+  width: 20vw;
+  margin: 20px;
+}
+.opp {
+  height: 100vh;
+  background-color: black;
+}
