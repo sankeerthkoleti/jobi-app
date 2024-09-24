@@ -119,6 +119,7 @@ class Jobs extends Component {
   }
 
   internship = () => {
+    console.log('sfj')
     if (this.state.employment_type === '') {
       this.setState(
         p => ({
