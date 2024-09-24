@@ -213,22 +213,22 @@ class Jobs extends Component {
   }
 
   profile_card = () => (
-    <div className="profile-card">
+    <div className='profile-card'>
       <img
         src={this.state.profile.profile_image_url}
-        className="profile-logo"
-        alt="profile"
+        className='profile-logo'
+        alt='profile'
       />
-      <h1 className="profile_name">{this.state.profile.name}</h1>
-      <p className="profile-description">{this.state.profile.short_bio}</p>
+      <h1 className='profile_name'>{this.state.profile.name}</h1>
+      <p className='profile-description'>{this.state.profile.short_bio}</p>
     </div>
   )
 
   profile_failure = () => <button onClick={this.get_details}>Retry</button>
 
   load = () => (
-    <div className="loader-container" data-testid="loader">
-      <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
+    <div className='loader-container' data-testid='loader'>
+      <Loader type='ThreeDots' color='#ffffff' height='50' width='50' />
     </div>
   )
 
@@ -246,8 +246,8 @@ class Jobs extends Component {
   co = () => (
     <div>
       <img
-        src="https://assets.ccbp.in/frontend/react-js/no-jobs-img.png"
-        alt="no jobs"
+        src='https://assets.ccbp.in/frontend/react-js/no-jobs-img.png'
+        alt='no jobs'
       />
       <h1>No Jobs Found</h1>
       <p>We could not find any jobs. Try other filters</p>
@@ -255,7 +255,7 @@ class Jobs extends Component {
   )
 
   po = () => (
-    <ul className="jobList">
+    <ul className='jobList'>
       {this.state.jobs_list.map(x => (
         <JobItems key={x.id} props={x} />
       ))}
@@ -269,8 +269,8 @@ class Jobs extends Component {
   job_failure = () => (
     <div>
       <img
-        src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
-        alt="failure view"
+        src='https://assets.ccbp.in/frontend/react-js/failure-img.png'
+        alt='failure view'
       />
       <button onClick={this.get_jobs}>Retry</button>
       <h1>Oops! Something Went Wrong</h1>
@@ -292,86 +292,86 @@ class Jobs extends Component {
     return (
       <div>
         <Header />
-        <div className="total">
-          <div className="left">
+        <div className='total'>
+          <div className='left'>
             <div>{this.x()}</div>
 
             <hr />
             <div>
-              <p className="e">Types of Employment</p>
-              <ul className="te">
+              <p className='e'>Types of Employment</p>
+              <ul className='te'>
                 <li>
                   <div>
-                    <input type="checkbox" id="f" onChange={this.fulltime} />
-                    <label htmlFor="f">Full Time</label>
+                    <input type='checkbox' id='f' onChange={this.fulltime} />
+                    <label htmlFor='f'>Full Time</label>
                   </div>
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" id="p" onChange={this.parttime} />
-                    <label htmlFor="p">Part Time</label>
+                    <input type='checkbox' id='p' onChange={this.parttime} />
+                    <label htmlFor='p'>Part Time</label>
                   </div>
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" id="fr" onChange={this.freelance} />
-                    <label htmlFor="fr">Freelance</label>
+                    <input type='checkbox' id='fr' onChange={this.freelance} />
+                    <label htmlFor='fr'>Freelance</label>
                   </div>
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" id="i" onChange={this.internship} />
-                    <label htmlFor="i">Internship</label>
+                    <input type='checkbox' id='i' onChange={this.internship} />
+                    <label htmlFor='i'>Internship</label>
                   </div>
                 </li>
               </ul>
             </div>
             <hr />
             <div>
-              <h1 className="e">Salary Range</h1>
-              <ul className="te">
+              <h1 className='e'>Salary Range</h1>
+              <ul className='te'>
                 <li>
                   <div>
-                    <input type="radio" id="fk" onChange={this.ten} />
-                    <label htmlFor="fk">10 LPA and above</label>
+                    <input type='radio' id='fk' onChange={this.ten} />
+                    <label htmlFor='fk'>10 LPA and above</label>
                   </div>
                 </li>
                 <li>
                   <div>
-                    <input type="radio" id="pk" onChange={this.twenty} />
-                    <label htmlFor="pk">20LPA and above</label>
+                    <input type='radio' id='pk' onChange={this.twenty} />
+                    <label htmlFor='pk'>20LPA and above</label>
                   </div>
                 </li>
                 <li>
                   <div>
-                    <input type="radio" id="fk" onChange={this.thirty} />
-                    <label htmlFor="fk">30LPA and above</label>
+                    <input type='radio' id='fk' onChange={this.thirty} />
+                    <label htmlFor='fk'>30LPA and above</label>
                   </div>
                 </li>
                 <li>
                   <div>
-                    <input type="radio" id="ik" onChange={this.fourty} />
-                    <label htmlFor="ik">40LPA and above</label>
+                    <input type='radio' id='ik' onChange={this.fourty} />
+                    <label htmlFor='ik'>40LPA and above</label>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="right">
-            <div className="search">
+          <div className='right'>
+            <div className='search'>
               <input
-                type="search"
-                className="k"
-                placeholder="search"
+                type='search'
+                className='k'
+                placeholder='search'
                 onChange={this.xkl}
                 value={this.state.search}
               />
               <button
                 onClick={this.get_jobs}
-                className="searchbtn"
-                data-testid="searchButton"
+                className='searchbtn'
+                data-testid='searchButton'
               >
-                <FaSearch color="white" />
+                <FaSearch color='white' />
               </button>
             </div>
             <div>{this.y()}</div>
